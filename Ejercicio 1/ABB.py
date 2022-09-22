@@ -99,7 +99,7 @@ class ABB:
             if padre.getDerecho() == nodo:
                 padre.setDerecho(None)
         else:
-            if (nodo.getIzquierdo() and nodo.getDerecho() is None) or (nodo.getIzquierdo() is None and nodo.getDerecho()):
+            if (nodo.getIzquierdo() and nodo.getDerecho() is None) or (nodo.getIzquierdo() is None and nodo.getDerecho()):  # el nodo a eliminar tiene un hijo
                 if padre.getIzquierdo() == nodo:
                     if nodo.getIzquierdo():
                         padre.setIzquierdo(nodo.getIzquierdo())
